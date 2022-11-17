@@ -1,0 +1,20 @@
+tasks:
+  - name: Dev
+    init: pnpm install
+    command: pnpm run dev
+vscode:
+  extensions:
+    - vivaxy.vscode-conventional-commits
+    - tabnine.tabnine-vscode
+    - sonarsource.sonarlint-vscode
+    - bradlc.vscode-tailwindcss
+    - jock.svg
+ports:
+  - name: Develope
+    description: Next/Gatsby dev server
+    port: 3000
+    onOpen: open-preview
+  - name: TabNine
+    description: TabNine GUI
+    port: 5555
+    onOpen: ignore
